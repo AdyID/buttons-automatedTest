@@ -26,7 +26,11 @@ if exists(Template(r"2.png", record_pos=(0.179, 0.077), resolution=(2960, 1440))
 wait(Template(r"10.png", record_pos=(0.001, 0.18), resolution=(2960, 1440)))
 if exists(Template(r"11.png", record_pos=(-0.003, 0.185), resolution=(2960, 1440))):
     touch(Template(r"11.png", record_pos=(-0.003, 0.185), resolution=(2960, 1440)))
-
+    sleep(2)
+    
+if  exists(Template(r"222.png", record_pos=(-0.001, -0.172), resolution=(2960, 1440)))
+    touch(Template(r"232.png", record_pos=(-0.002, 0.166), resolution=(2960, 1440)))
+    sleep(2)
 if exists(Template(r"12.png", record_pos=(-0.01, -0.146), resolution=(2960, 1440))):
     assert_exists(Template(r"13.png", record_pos=(-0.003, 0.115), resolution=(2960, 1440)), "Update available.")
     touch(Template(r"14.png", record_pos=(0.188, -0.141), resolution=(2960, 1440)))
